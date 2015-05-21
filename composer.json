@@ -1,0 +1,35 @@
+{
+    "name": "dc/bundler-less",
+    "description": "LESS support for dc/bundler",
+    "minimum-stability": "stable",
+    "homepage": "http://github.com/digitalcreations/bundler-less",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Digital Creations AS",
+            "homepage": "http://www.digitalcreations.no",
+            "role": "Company"
+        },
+        {
+            "name": "Vegard Andreas Larsen",
+            "homepage": "http://vega.rd.no",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "http://github.com/digitalcreations/bundler-less/issues",
+        "source": "http://github.com/digitalcreations/bundler-less"
+    },
+    "autoload": {
+        "psr-4": {
+            "DC\\Bundler\\Less\\": "src/"
+        }
+    },
+    "require": {
+        "dc/bundler": "dev-master",
+        "oyejorge/less.php": "1.*"
+    },
+    "suggest": {
+        "dc/ioc": "dev-master"
+    }
+}
