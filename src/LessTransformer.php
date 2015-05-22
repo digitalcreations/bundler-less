@@ -34,4 +34,19 @@ class LessTransformer implements \DC\Bundler\ITransformer {
     {
         return "text/css";
     }
+
+    /**
+     * @inheritdoc
+     */
+    function runInDebugMode()
+    {
+        return true;
+    }
+
+
+    public static function registerWithContainer(\DC\IoC\Container $container) {
+        $container
+            ->register('\DC\Bundler\Less\LessTransformer')
+            ->to('\DC\Bundler\ITransformer');
+    }
 }

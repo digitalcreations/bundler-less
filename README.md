@@ -22,7 +22,6 @@ This package depends on `dc/router`, but strongly suggests `dc/ioc`. This is how
 the IoC container so it is picked up automatically.
 
 ```php
-$container
-    ->register('\DC\Bundler\Less\LessTransformer')
-    ->to('\DC\Bundler\ITransformer');
+```php
+\DC\Bundler\Less\LessTransformer::registerWithContainer($container);
 ```
